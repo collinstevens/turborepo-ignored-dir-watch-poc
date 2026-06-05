@@ -1,0 +1,10 @@
+{
+  "name": "apps-core",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:bundle": "node scripts/dev-bundle.js",
+    "dev": "exec node scripts/dev-wrapper.js"
+  }
+}

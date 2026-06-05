@@ -1,0 +1,5 @@
+.ignored-watch-stress/
+.turbo/
+node_modules/
+apps/*/dist/
+apps/*/out/

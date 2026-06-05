@@ -1,0 +1,25 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "dev:bundle": {
+      "inputs": [
+        "$TURBO_DEFAULT$"
+      ],
+      "outputs": [
+        "out/dev-build/**"
+      ]
+    },
+    "dev": {
+      "dependsOn": [
+        "dev:bundle"
+      ],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        "out/dev-build/**"
+      ],
+      "cache": false,
+      "persistent": true,
+      "interruptible": true
+    }
+  }
+}
